@@ -1,4 +1,4 @@
-H1 integrate C++ code in IOS framework
+# integrate C++ code in IOS framework
 
 we will start from the very begining by a simple C++ addition project with header file
 the programe in it's simplest form should include:
