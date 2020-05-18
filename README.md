@@ -63,7 +63,7 @@ using this code should produce a file libAddSim.a in cmake-build-debug folder.
 on the ios side
 in the framework we will need to add add.h (header library) in the framework directory and add lAddSim.a
 
-[logo]: https://github.com/SohaEmad/iosDemo/images/addLib.png
+![alt text](https://github.com/SohaEmad/iosDemo/blob/master/images/addLib.png?raw=true)
 
 now we need to create objective-C header and .mm wrapper
 
@@ -98,10 +98,9 @@ wrapper.mm file should import the two headers
 
 all .h files should be public insteade of project in <frameworkname.framework>
 
-[logo]: https://github.com/SohaEmad/iosDemo/images/publicLib2.png
+![alt text](https://github.com/SohaEmad/iosDemo/blob/master/images/publicLib2.png?raw=true)
 
-[logo]: https://github.com/SohaEmad/iosDemo/images/publicLib.png
-
+![alt text](https://github.com/SohaEmad/iosDemo/blob/master/images/publicLib.png?raw=true)
 
 add the following line at the end of the <frameworkname>.h file
 ```#include "addwrapperheader.h"
@@ -113,3 +112,4 @@ and we can use the function through an object of the wrapperclass
 ```
 testwrapperheader().addtestobj(12,num2:3);
 ```
+![output](https://github.com/SohaEmad/iosDemo/blob/master/images/output.png?raw=true)
