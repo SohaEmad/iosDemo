@@ -1,5 +1,19 @@
 # integrate C++ code in IOS framework
 
+## steps to test the Demo:
+
+1. open DemoApp.xcodeproj
+2. build DemoFramework.framework 
+3. add build outbut DerivedData/DemoFramework.framework  to the app build phase / copy bundle resources
+4. edit values of num1 and num2 in DemoApp/viewcontroller 
+```swift 
+//addtestobj(num1, num2)
+testwrapperheader().addtestobj(12,num2:3);
+```
+5. run DemoApp
+
+# Indetails explination:
+
 we will start from the very begining by a simple C++ addition project with header file
 the programe in it's simplest form should include:
 1. add.h
